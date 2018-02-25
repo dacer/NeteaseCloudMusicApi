@@ -54,7 +54,8 @@ function createWebAPIRequest(
       Referer: "http://music.163.com",
       Host: "music.163.com",
       Cookie: cookie,
-      "User-Agent": randomUserAgent()
+      "User-Agent": randomUserAgent(),
+      "X-Real-IP":'211.160.244.70'
     },
     body: querystring.stringify({
       params: cryptoreq.params,
@@ -93,7 +94,8 @@ function createRequest(path, method, data) {
         Referer: "http://music.163.com",
         Cookie: "appver=1.5.2",
         "Content-Type": "application/x-www-form-urlencoded",
-        "User-Agent": randomUserAgent()
+        "User-Agent": randomUserAgent(),
+        "X-Real-IP":'211.160.244.70'
       }
     };
 
